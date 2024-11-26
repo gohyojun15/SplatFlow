@@ -42,62 +42,50 @@
 <body>
     <div class="highlight-clean" style="padding-bottom: 10px;">
         <div class="container" style="max-width: 1024px; margin-bottom: 20px;">
-            <h1 class="text-center">SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis
-            </h1>
+            <h1 class="text-center">SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis</h1>
         </div>
-        <!-- <div class="container" style="max-width: 1024px; margin-bottom: 20px;">
-            <h3 class="text-center">Code will be released soon.
-            </h3>
-        </div> -->
-        <div class="container" style="max-width: 980px; margin-bottom: 20px;">
+
+        <div class="container" style="max-width: 1024px; margin-bottom: 20px;">
             <div class="row authors">
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center"><sup></sup> </a></h5>
+                <!-- Author List -->
+                <div class="col text-center">
+                    <a href="https://gohyojun15.github.io/" style="text-decoration: none; color: blue;">
+                        <h5>Hyojun Go<sup>*1</sup></h5>
+                    </a>
                 </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="https://gohyojun15.github.io/">Hyojun
-                            Go<sup>1</sup></a>
-                    </h5>
+                <div class="col text-center">
+                    <a href="https://byeongjun-park.github.io/" style="text-decoration: none; color: blue;">
+                        <h5>Byeongjun Park<sup>*2</sup></h5>
+                    </a>
                 </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="https://byeongjun-park.github.io/">Byeongjun
-                            Park<sup>2</sup></a>
-                    </h5>
+                <div class="col text-center">
+                    <h5>Jiho Jang<sup>1</sup></h5>
                 </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center">Jiho
-                            Jang<sup>1</sup></a></h5>
+                <div class="col text-center">
+                    <h5>Jin-Young Kim<sup>1</sup></h5>
                 </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center">Jin-Young
-                            Kim<sup>1</sup></a></h5>
+                <div class="col text-center">
+                    <h5>Soonwoo Kwon<sup>1</sup></h5>
                 </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center">Soonwoo
-                            Kwon<sup>1</sup></a></h5>
-                </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center">Changick
-                            Kim<sup>2</sup></a></h5>
-                </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center"><sup></sup> </a></h5>
+                <div class="col text-center">
+                    <h5>Changick Kim<sup>2 †</sup></h5>
                 </div>
             </div>
-            <div class="row affiliations">
-                <div class="col">
-                    <h6 class="text-center"><a class="text-center"></a></h6>
+
+            <div class="row affiliations mt-3">
+                <!-- Affiliations -->
+                <div class="col text-center">
+                    <h6><sup>1</sup>Twelvelabs</h6>
                 </div>
-                <div class="col">
-                    <h6 class="text-center"><a class="text-center"><sup>1</sup>Twelvelabs</a></h6>
+                <div class="col text-center">
+                    <h6><sup>2</sup>KAIST</h6>
                 </div>
-                <div class="col">
-                    <h6 class="text-center"><a class="text-center"><sup>2</sup>KAIST</a></h6>
-                </div>
-                <div class="col">
-                    <h6 class="text-center"><a class="text-center"></a></h6>
+                <div class="col text-center">
+                    <h6>(* : Equal Contribution, † : Corresponding Author)</h6>
                 </div>
             </div>
+
+
         </div>
         <div class="container" style="max-width: 240px; margin-bottom: 20px;">
             <div class="buttons" style="margin-top: 8px; margin-bottom: 8px;">
@@ -134,7 +122,8 @@
             <div class="row authors">
                 <div class="col-sm-12">
                     <h6 class="text-center" style="text-align: center">
-                        TL;DR: SplatFlow is a unified framework for 3D Gaussian Splatting that combines a latent-space
+                        TL;DR: SplatFlow is a unified framework for 3D Gaussian Splatting that combines a
+                        latent-space
                         multi-view generator and a Gaussian Splatting Decoder to enable efficient 3D generation,
                         editing, and inpainting directly from text prompts.
                     </h6>
@@ -178,7 +167,8 @@
                 <img src="asset/architecture.png" alt="architecture" style="width: 100%">
                 <h6 class="caption" style="text-align: left" ;>
                     SplatFlow framework: The RF model generates multi-view latents (images, depths, and Plücker ray
-                    coordinates) from text prompts, optimized for camera poses, while the GSDecoder converts them into
+                    coordinates) from text prompts, optimized for camera poses, while the GSDecoder converts them
+                    into
                     pixel-aligned 3D Gaussian splats.
                 </h6>
             </div>
