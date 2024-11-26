@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600' rel='stylesheet'
         type='text/css'>
-    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="asset/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="asset/css/styles.css">
 
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> -->
-    <!-- <link rel="icon" type="image/png" href="assets/icon.ico"> -->
-    <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png"> -->
+    <!-- <link rel="icon" type="image/png" href="asset/icon.ico"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon-16x16.png"> -->
     <link rel="manifest" href="site.webmanifest">
     <meta name="robots" content="noindex">
 
@@ -35,26 +35,26 @@
         content="SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis, 2024." />
     <meta property="og:url" content="" />
 
-    <script src="assets/js/video_comparison.js"></script>
+    <script src="asset/js/video_comparison.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
     <div class="highlight-clean" style="padding-bottom: 10px;">
         <div class="container" style="max-width: 1024px; margin-bottom: 20px;">
-            <h1 class="text-center">SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis</h1>
+            <h1 class="text-center"><b>SplatFlow</b>: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis</h1>
         </div>
 
         <div class="container" style="max-width: 1024px; margin-bottom: 20px;">
             <div class="row authors">
                 <!-- Author List -->
                 <div class="col text-center">
-                    <a href="https://gohyojun15.github.io/" style="text-decoration: none; color: blue;">
+                    <a href="https://gohyojun15.github.io/">
                         <h5>Hyojun Go<sup>*1</sup></h5>
                     </a>
                 </div>
                 <div class="col text-center">
-                    <a href="https://byeongjun-park.github.io/" style="text-decoration: none; color: blue;">
+                    <a href="https://byeongjun-park.github.io/">
                         <h5>Byeongjun Park<sup>*2</sup></h5>
                     </a>
                 </div>
@@ -80,51 +80,50 @@
                 <div class="col text-center">
                     <h6><sup>2</sup>KAIST</h6>
                 </div>
+            </div>
+
+            <div class="row contribution">
                 <div class="col text-center">
                     <h6>(* : Equal Contribution, † : Corresponding Author)</h6>
                 </div>
             </div>
-
-
         </div>
-        <div class="container" style="max-width: 240px; margin-bottom: 20px;">
-            <div class="buttons" style="margin-top: 8px; margin-bottom: 8px;">
-                <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2411.16443">
-                    <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z">
-                        </path>
-                    </svg>Paper
-                </a>
-                <a class="btn btn-light" role="button" href="https://github.com/gohyojun15/SplatFlow/">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 
-                            1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 
-                            3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 
-                            2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
-                        </path>
-                    </svg>
-                    Code
-                </a>
-                <!-- <a class="btn btn-light" role="button" href="gallery_0.html">
-                    <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" width="24px" height="24px"
-                        viewBox="0 0 375 531">
-                        <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
-                    </svg>
-                    Gallery
-                </a> -->
-                <!-- </div> -->
-            </div>
+
+        <div class="buttons" style="margin-top: 8px; margin-bottom: 8px;">
+            <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2411.16443">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z">
+                    </path>
+                </svg>Paper
+            </a>
+            <a class="btn btn-light" role="button" href="https://github.com/gohyojun15/SplatFlow/">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729
+                        1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322
+                        3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823
+                        2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                    </path>
+                </svg>
+                Code
+            </a>
+            <!-- <a class="btn btn-light" role="button" href="gallery_0.html">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" width="24px" height="24px"
+                    viewBox="0 0 375 531">
+                    <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
+                </svg>
+                Gallery
+            </a> -->
+            <!-- </div> -->
+        </div>
         </div>
         <div class="container" style="max-width: 768px;">
             <div class="row authors">
                 <div class="col-sm-12">
                     <h6 class="text-center" style="text-align: center">
-                        TL;DR: SplatFlow is a unified framework for 3D Gaussian Splatting that combines a
-                        latent-space
-                        multi-view generator and a Gaussian Splatting Decoder to enable efficient 3D generation,
+                        TL;DR: SplatFlow is a unified framework that combines a latent-space multi-view generator and a Gaussian Splatting Decoder to enable efficient 3D generation,
                         editing, and inpainting directly from text prompts.
                     </h6>
                 </div>
@@ -329,9 +328,9 @@
         <div class="row">
             <div class="col-md-6 col-sm-6 my-auto">
                 <model-viewer alt="Sweater Frog"
-                    src="assets/meshes/sweaterfrog_1step.glb"
+                    src="asset/meshes/sweaterfrog_1step.glb"
                     poster="https://pub-b1f092b6867f4495b8f149d222a3bffe.r2.dev/meshes/sept28/sweaterfrog_1step.jpg"
-                    environment-image="https://modelviewer.dev/shared-assets/environments/whipple_creek_regional_park_04_1k.hdr"
+                    environment-image="https://modelviewer.dev/shared-asset/environments/whipple_creek_regional_park_04_1k.hdr"
                     shadow-intensity="1" exposure="0.3" camera-controls touch-action="pan-y" ar
                     loading="lazy" reveal="manual" id="mesh1"
                     crossorigin="anonymous" style="height: 300px; width: 100%;">
@@ -342,9 +341,9 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-6 my-auto" style="position: relative">
-                <model-viewer alt="Scorpion" src="assets/meshes/scorpion_1step.glb"
+                <model-viewer alt="Scorpion" src="asset/meshes/scorpion_1step.glb"
                     poster="https://pub-b1f092b6867f4495b8f149d222a3bffe.r2.dev/meshes/sept28/scorpion_1step.jpg"
-                    environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+                    environment-image="https://modelviewer.dev/shared-asset/environments/spruit_sunrise_1k_HDR.hdr"
                     shadow-intensity="1" exposure=".5" camera-controls touch-action="pan-y" ar
                     loading="lazy" reveal="manual" id="mesh2"
                     crossorigin="anonymous" style="height: 300px; width: 100%;">
@@ -358,9 +357,9 @@
         <div class="row">
             <div class="col-md-6 col-sm-6 my-auto">
                 <model-viewer alt="Packard car"
-                    src="assets/meshes/packardcar_1step.glb"
+                    src="asset/meshes/packardcar_1step.glb"
                     poster="https://pub-b1f092b6867f4495b8f149d222a3bffe.r2.dev/meshes/sept28/packardcar_1step.jpg"
-                    environment-image="https://modelviewer.dev/shared-assets/environments/whipple_creek_regional_park_04_1k.hdr"
+                    environment-image="https://modelviewer.dev/shared-asset/environments/whipple_creek_regional_park_04_1k.hdr"
                     shadow-intensity="1" exposure="0.3" camera-controls touch-action="pan-y" ar
                     loading="lazy" reveal="manual" id="mesh3"
                     crossorigin="anonymous" style="height: 300px; width: 100%;">
@@ -372,9 +371,9 @@
             </div>
             <div class="col-md-6 col-sm-6 my-auto" style="position: relative">
                 <model-viewer alt="Sydney Opera House"
-                    src="assets/meshes/sydney_1step.glb"
+                    src="asset/meshes/sydney_1step.glb"
                     poster="https://pub-b1f092b6867f4495b8f149d222a3bffe.r2.dev/meshes/sept28/sydney_1step.jpg"
-                    environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+                    environment-image="https://modelviewer.dev/shared-asset/environments/moon_1k.hdr"
                     shadow-intensity="1" exposure="0.6" camera-controls touch-action="pan-y" ar
                     loading="lazy" reveal="manual" id="mesh4"
                     crossorigin="anonymous" style="height: 300px; width: 100%;">
@@ -388,9 +387,9 @@
         <div class="row">
             <div class="col-md-6 col-sm-6 my-auto">
                 <model-viewer alt="Croissant"
-                    src="assets/meshes/croissant_1step.glb"
+                    src="asset/meshes/croissant_1step.glb"
                     poster="https://pub-b1f092b6867f4495b8f149d222a3bffe.r2.dev/meshes/sept28/croissant_1step.jpg"
-                    environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+                    environment-image="https://modelviewer.dev/shared-asset/environments/spruit_sunrise_1k_HDR.hdr"
                     shadow-intensity="1" exposure="0.6" camera-controls touch-action="pan-y" ar
                     loading="lazy" reveal="manual" id="mesh5"
                     crossorigin="anonymous" style="height: 300px; width: 100%;">
@@ -401,9 +400,9 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-6 my-auto" style="position: relative">
-                <model-viewer alt="A robot holds a human brain" src="assets/meshes/robotholdsbrain_1step.glb"
+                <model-viewer alt="A robot holds a human brain" src="asset/meshes/robotholdsbrain_1step.glb"
                     poster="https://pub-b1f092b6867f4495b8f149d222a3bffe.r2.dev/meshes/sept28/robotholdsbrain_1step.jpg"
-                    environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr"
+                    environment-image="https://modelviewer.dev/shared-asset/environments/spruit_sunrise_1k_HDR.hdr"
                     shadow-intensity="1" exposure="0.5" camera-controls touch-action="pan-y" ar
                     loading="lazy" reveal="manual" id="mesh6"
                     crossorigin="anonymous" style="height: 300px; width: 100%;">
@@ -457,7 +456,7 @@
         </footer>
     </div>
     <script src="https://polyfill.io/v3/polyfill.js?features=IntersectionObserver"></script>
-    <script src="assets/js/yall.js"></script>
+    <script src="asset/js/yall.js"></script>
     <script>
         yall(
             {
@@ -465,7 +464,7 @@
             }
         );
     </script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="asset/js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/js/webflow.fd002feec.js"></script>
