@@ -174,12 +174,26 @@
     <div class="container" style="max-width: 768px;">
         <div class="row captioned_videos">
             <div class="col-md-12">
+                <h2>Overview of SplatFlow</h2>
                 <img src="asset/architecture.png" alt="architecture" style="width: 100%">
-                <!-- <h6 class="caption" style="text-align: left" ;>
-                    SplatFlow is a unified framework for 3D Gaussian Splatting that combines a latent-space multi-view
-                    generator and a Gaussian Splatting Decoder to enable efficient 3D generation, editing, and
-                    inpainting directly from text prompts.
-                </h6> -->
+                <h6 class="caption" style="text-align: left" ;>
+                    SplatFlow framework: The RF model generates multi-view latents (images, depths, and Plücker ray
+                    coordinates) from text prompts, optimized for camera poses, while the GSDecoder converts them into
+                    pixel-aligned 3D Gaussian splats.
+                </h6>
+            </div>
+        </div>
+    </div>
+    <hr class="divider" />
+    <div class="container" style="max-width: 4096px;">
+        <div class="row captioned_videos">
+
+            <div class="col-md-12">
+                <h2>3D Generation</h2>
+                <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
+                    <source data-src="asset/splatflow_video.mp4" type="video/mp4">
+                    </source>
+                </video>
             </div>
         </div>
     </div>
