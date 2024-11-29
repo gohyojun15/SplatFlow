@@ -12,3 +12,15 @@
 
 
 ---
+
+## Citation
+If you find this repository helpful for your project, please consider citing our work. :)
+```
+@article{go2024splatflow,
+  title={SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis},
+  author={Go, Hyojun and Park, Byeongjun and Jang, Jiho and Kim, Jin-Young and Kwon, Soonwoo and Kim, Changick},
+  journal={arXiv preprint arXiv:2411.16443},
+  year={2024}
+}
+```
+---
