@@ -1,4 +1,4 @@
-# SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis
+# [CVPR 2025] SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis
 
 
 <a href="https://arxiv.org/abs/2411.16443"><img src="https://img.shields.io/badge/arXiv-2411.16443-b31b1b.svg"></a>
