@@ -49,6 +49,7 @@ We thank [director3d](https://github.com/imlixinyang/Director3D)
 
 
 ## TODO:
+- [ ] Update project page.
 - [ ] Add model checkpoints (maybe google drive)
   - [ ] Review huggingface compatibility 
 - [ ] Code verification.
