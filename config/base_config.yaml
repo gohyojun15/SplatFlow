@@ -1,0 +1,58 @@
+
+general:
+  iterations: 0
+  num_workers: 0
+  global_batch_size: 0
+  global_seed: 42
+  gpu_offset: 0
+  mixed_precision: true
+  sampled_view: 8
+  debug: true
+
+optim: 
+  lr: 0
+  weight_decay: 0
+  warmup_steps: 0
+
+gsdecoder:
+  gan_loss:
+    enable: true
+    disc_start: 0
+    disc_weight: 0.1 
+  loading_ckpt_path: Null 
+
+mv_rf_model:
+  resume_from_ckpt: Null
+  weighting_scheme: "logit_normal"
+  logit_mean: 0
+  logit_std: 1.0
+  mode_scale: 1.29
+  precondition_outputs: true
+  hf_path: "stabilityai/stable-diffusion-3-medium-diffusers"
+
+depth_encoder:
+  hf_path: "depth-anything/Depth-Anything-V2-Small-hf"
+
+defaults:
+  - _self_
+  - override hydra/job_logging: disabled
+  - override hydra/hydra_logging: disabled
+
+
+# Inference configuration. 
+inference:
+  mv_rf_ckpt: checkpoints/120_mv_rf_ema.pt
+  gsdecoder_ckpt: checkpoints/gs_decoder.pt
+  sample:
+    num_steps: 200
+    cfg: true 
+    cfg_scale: [7.0, 5.0, 1.0]
+    stop_ray: 50
+    sd3_guidance: true
+    sd3_cfg: true
+    sd3_scale: 3.0
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null

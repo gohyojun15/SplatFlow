@@ -1,0 +1,26 @@
+# @package _global_
+
+inference:
+  # generation 
+  generate:
+    save_path: "samples"
+    prompt: "A blue car on a clean street with buildings in the background"
+    refiner:
+      args:
+        sd_model_key: 'stabilityai/stable-diffusion-2-1-base'
+        num_views: 1
+        img_size: 512
+        guidance_scale: 7.5
+        min_step_percent: 0.02
+        max_step_percent: 0.5
+        num_densifications: 4
+        lr_scale: 0.25
+        lrs: {'xyz': 2e-4, 'features': 1e-2, 'opacity': 5e-2, 'scales': 1e-3, 'rotations': 1e-2, 'embeddings': 1e-2}
+        use_lods: True
+        lambda_latent_sds: 1
+        lambda_image_sds: 0.1
+        lambda_image_variation: 0.001
+        opacity_threshold: 0.001
+        text_templete: $text$
+        negative_text_templete: 'unclear. noisy. point cloud. low-res. low-quality. low-resolution. unrealistic.'
+        total_iterations: 1000

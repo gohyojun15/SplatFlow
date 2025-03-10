@@ -1,0 +1,15 @@
+.vscode
+baseline_results
+checkpoints
+final
+final_latest_4
+output
+point_clouds
+results
+sample_ablation
+sample_scene
+samples
+teasure
+tmp
+wandb
+__pycache__
