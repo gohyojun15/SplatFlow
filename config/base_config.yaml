@@ -41,7 +41,7 @@ defaults:
 
 # Inference configuration. 
 inference:
-  mv_rf_ckpt: checkpoints/120_mv_rf_ema.pt
+  mv_rf_ckpt: checkpoints/mv_rf_ema.pt
   gsdecoder_ckpt: checkpoints/gs_decoder.pt
   sample:
     num_steps: 200

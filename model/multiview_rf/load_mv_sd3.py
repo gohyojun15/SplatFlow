@@ -1,7 +1,8 @@
 from argparse import Namespace
 
-from model.multiview_rf.mv_sd3_architecture import MultiViewSD3Transformer
 from transformers import CLIPTokenizer, PretrainedConfig, T5TokenizerFast
+
+from model.multiview_rf.mv_sd3_architecture import MultiViewSD3Transformer
 
 
 def import_model_class_from_model_name_or_path(

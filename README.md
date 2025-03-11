@@ -17,21 +17,21 @@ pip install -r requirements.txt
 ```
 
 ## Model Checkpoints
-We have extended the model training period after submission to enhance its performance. Updated model checkpoints are now available, and benchmark results will be revised following the review process. You can download the model checkpoints from the links below:
+We have extended the model training period after submission to enhance its performance. Updated model checkpoints are now available, and benchmark results will be revised following the review process. You can download the model checkpoints with the following command:
+```
+bash download.sh
+```
 
-| Model               | Link |
-| ------------------- | ---- |
-| Multi-view RF model |      |
-| GSDecoder           |      |
+
 
 ## Inference
 ### 1. 3DGS Generation
 
 ```bash
 export PYTHONPATH=$(pwd)
+huggingface-cli login 
 python inference/generate.py +experiments=generation inference.generate.prompt="Your prompt here"
 ```
-
 
 ## Citation
 If you find this repository helpful for your project, please consider citing our work. :)
@@ -50,8 +50,7 @@ We thank [director3d](https://github.com/imlixinyang/Director3D)
 
 ## TODO:
 - [ ] Update project page.
-- [ ] Add model checkpoints (maybe google drive)
-  - [ ] Review huggingface compatibility 
-- [ ] Code verification.
+- [x] Add model checkpoints
+- [x] Code verification.
 - [ ] Add more details on the README.md
 - [ ] Add the training script
