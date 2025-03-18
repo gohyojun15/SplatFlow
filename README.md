@@ -54,4 +54,4 @@ We thank [director3d](https://github.com/imlixinyang/Director3D)
 - [x] Code verification.
 - [ ] Add more details on the README.md
 - [ ] Add the training script
-- [ ] Share text annotations for RealEstate10K, DL3DV-10K, MVImgNet, and ACID datasets. (Used in the next work)
+- [ ] Share text annotations for RealEstate10K, DL3DV-10K, MVImgNet, and ACID datasets. (Used in the next work, may be integrated with https://github.com/gohyojun15/VideoRFSplat)
